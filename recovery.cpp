@@ -794,8 +794,8 @@ Device::BuiltinAction start_recovery(Device* device, const std::vector<std::stri
   }
 
   std::vector<std::string> title_lines =
-      android::base::Split(android::base::GetProperty("ro.build.fingerprint", ""), ":");
-  title_lines.insert(std::begin(title_lines), "Android Recovery");
+      android::base::Split(android::base::GetProperty("ro.404.version", ""), ":");
+  title_lines.insert(std::begin(title_lines), "404 Recovery");
   ui->SetTitle(title_lines);
 
   ui->ResetKeyInterruptStatus();
